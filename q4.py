@@ -12,9 +12,9 @@ sigma1,sigma2=2*np.random.rand(2)
 x=np.zeros(10000)
 for i in range(10000):
     if np.random.rand()<pi:
-        x[i]=np.random.normal(mu1,sigma1,1)
+        x[i]=np.random.normal(mu1,sigma1)
     else:
-        x[i]=np.random.normal(mu2,sigma2,1)
+        x[i]=np.random.normal(mu2,sigma2)
         
 
 

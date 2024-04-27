@@ -8,11 +8,11 @@ x=np.zeros(size)
 for i in range(size):
     u=np.random.rand()
     if u<p[0]:
-        x[i]=np.random.normal(mu[0],sigma[0],1)
+        x[i]=np.random.normal(mu[0],sigma[0])
     elif u<sum(p[:-1]):
-        x[i]=np.random.normal(mu[1],sigma[1],1)
+        x[i]=np.random.normal(mu[1],sigma[1])
     else:
-        x[i]=np.random.normal(mu[2],sigma[2],1)
+        x[i]=np.random.normal(mu[2],sigma[2])
 
 
 pi=np.array([1/3,1/3,1/3])

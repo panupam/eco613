@@ -9,19 +9,19 @@ n=int(input("Enter n "))
 p=float(input("Enter p"))
 r=int(input("enter r"))
 lem=float(input("eneter lambda"))
-a=[]
+a=[] 
 b=[]
 c=[]
 d=[]
 
 for i in range(10000):
     x=np.random.rand(n)
-    a.append(np.sum(x<p))
+    a.append(np.sum(x<p)) # Binomial Distribution
     
 
 for i in range(10000):
     count=1
-    while np.random.rand()>p:
+    while np.random.rand()>p:  #Geometric
         count+=1
     
     b.append(count)
@@ -34,7 +34,7 @@ for i in range(10000):
             cnt+=1
         
         count+=1
-    c.append(count)
+    c.append(count) # negative binomial 
     
 
 for i in range(10000):
@@ -42,7 +42,7 @@ for i in range(10000):
     s=0
     while (s+np.random.exponential(1/lem,1))<1:
         count+=1
-    d.append(count)
+    d.append(count)  # Poisson  
 a=np.array(a)
 b=np.array(b)
 c=np.array(c)

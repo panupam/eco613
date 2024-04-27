@@ -7,9 +7,9 @@ x=np.zeros(size)
 n=20
 for i in range(size):
     if np.random.rand()<pi:
-        x[i]=np.random.binomial(n,p[0],1)
+        x[i]=np.random.binomial(n,p[0])
     else:
-        x[i]=np.random.binomial(n,p[1],1)
+        x[i]=np.random.binomial(n,p[1])
     
 
 
